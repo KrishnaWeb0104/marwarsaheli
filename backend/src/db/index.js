@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
 import dotenv from "dotenv";
-dotenv.config({
-    path: "./.env",
-});
+dotenv.config();
+
 const connectDB = async () => {
     try {
         const connectionInstance = await mongoose.connect(
